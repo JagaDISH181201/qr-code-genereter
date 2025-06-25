@@ -21,5 +21,5 @@ def qrcode():
     img_str=request.args.get('img_str')
     return render_template('qrcode.html',img_str=img_str)
 if __name__=='__main__':
-    app.run(debug=True)
+    app.run(host='0.0.0.0',debug=True)
 
